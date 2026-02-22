@@ -184,3 +184,18 @@ h1 {
     border-radius: 12px;
     font-size: 0.9rem;
 }
+.footer {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 2px dashed #fce7f3;
+    color: #a0aec0;
+    font-size: 0.85rem;
+    line-height: 1.8;
+}
+
+.footer strong {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
