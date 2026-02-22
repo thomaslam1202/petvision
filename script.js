@@ -79,7 +79,15 @@ predictBtn.addEventListener("click", async () => {
         if (!response.ok) throw new Error("Server error");
 
         const data = await response.json();
-
+        if (data.confidence < 0.10) {
+            document.getElementById("className").innerText = "❌ Not a cat or dog";
+            document.getElementById("confidenceText").innerText = `${confidence}%`;
+            document.getElementById("barFill").style.width = `${confidence}%`;
+            resultCard.hidden = false;
+            loading.style.display = "none";
+            predictBtn.disabled = false;
+            return;
+        }
         // Format class name
         const className = data.class.replace(/_/g, " ");
         const confidence = (data.confidence * 100).toFixed(1);
