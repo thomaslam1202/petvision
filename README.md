@@ -39,7 +39,7 @@ Switching from ResNet‑18 (20 seconds/epoch) to EfficientNet‑B3 (30 minutes/e
 Solution:
 - Enabled AMP mixed precision, cutting epoch time by ~90% with no compromsing on accuracy 
   
-##🐱 Fine‑Grained Cat Breeds Are Hard
+## 🐱 Fine‑Grained Cat Breeds Are Hard
 Some cat breeds look extremely similar, making classification difficult.
 I manually inspected and filtered ambiguous images to help the model learn clearer patterns.
 
