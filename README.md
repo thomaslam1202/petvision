@@ -39,7 +39,8 @@ Switching from ResNet‑18 (20 seconds/epoch) to EfficientNet‑B3 (30 minutes/e
 Solution:
 - Enabled AMP mixed precision, cutting epoch time by ~90% with no compromsing on accuracy 
   
-## 🐱 Fine‑Grained Cat Breeds Are Hard
+🐱 Fine‑Grained Cat Breeds Are Hard
+
 Some cat breeds look extremely similar, making classification difficult.
 I manually inspected and filtered ambiguous images to help the model learn clearer patterns.
 
@@ -63,9 +64,10 @@ This setup allowed me to build a fully functional, zero‑cost, production‑sty
 This project taught me the full ML pipeline end to end:
 - How to structure and clean image datasets
 - How to train and optimize deep learning models
-- How to use CUDA and mixed precision for performance
+- How to use mixed precision for performance
 - How to containerize and deploy a backend API
 - How to build a frontend from scratch
 - How to connect everything into a working product
+  
 It was challenging, but incredibly rewarding — and it’s only the beginning of my machine learning journey.
 
